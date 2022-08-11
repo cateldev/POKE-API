@@ -23,7 +23,7 @@ function App() {
   useEffect(() => {
     console.log("carregou");
     fetchPokemons();
-  });
+  }, []);
 
   return (
     <div>
