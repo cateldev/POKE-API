@@ -17,7 +17,7 @@ function App() {
         return await getPokemonData(pokemon.url);
       });
 
-      const results = Promise.all(promises);
+      const results = await Promise.all(promises);
       setPokemons(results);
       setLoading(false);
     } catch (error) {
@@ -34,7 +34,7 @@ function App() {
     <div>
       <Navbar />
       <Searchbar />
-      <Pokedex pokemons={pokemons.results} loading={loading} />
+      <Pokedex pokemons={pokemons} loading={loading} />
       <div className="App"></div>
     </div>
   );
