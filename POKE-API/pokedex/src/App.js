@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { getPokemonData, getPokemons } from "./api";
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Pokedex from "./components/Pokedex";
-import Searchbar from "./components/Searchbar";
+import Navbar from "./components/Navbar/Navbar.js";
+import Pokedex from "./components/Pokedex/Pokedex.js";
+import Searchbar from "./components/Searchbar/Searchbar.js";
 
 function App() {
   const [loading, setLoading] = useState(false);
